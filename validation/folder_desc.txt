@@ -1,0 +1,1 @@
+Files here are used to validate data integrity by checking data for the database to use.

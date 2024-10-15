@@ -1,0 +1,2 @@
+Seperates public and private routes for calls, where public calls require no authorization, but private ones do.
+Example route: "api/tasks"

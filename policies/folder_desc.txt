@@ -1,0 +1,2 @@
+Files here manage common calls for management such as CRUD calls, used only by admins.
+*CRUD = (Create, Read, Update, Destroy)

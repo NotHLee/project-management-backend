@@ -1,0 +1,48 @@
+[
+[ 
+  {"tasks": "Table"},
+  {
+    "_id": "ObjectId (Do 'pip install bson' in your command line, imported with 'from bson.objectid import ObjectId')",
+    "taskName": "str", 
+    "storyType": "str, [Story, Bug]", 
+    "storyPoints": "int, 1 <= x <= 10", 
+    "tags": "list[str]", 
+    "priority": "str, [Low, Medium, Important, Urgent]", 
+    "assignee": "str",
+    "status": "str, [Not Started, In Progress, Completed]",
+    "description": "str",
+    "progress": "str [Planning, Development, Integration, Testing]",
+    "creationDate": "datetime",
+    "completionDate": "datetime",
+    "sprint": "sprint id (str)",
+    "logs": "list of dict of log info: [{member: str, date: datetime, hours: str}]",
+    "history": "list of dict of history info: [{description: str, date: datetime}]"
+  }
+],
+
+[
+  {"sprints": "Table"},
+  {
+    "_id": "ObjectId (Do 'pip install bson' in your command line, imported with 'from bson.objectid import ObjectId')",
+    "sprintName": "str",
+    "status": "str [Not Started, In Progress, Completed]",
+    "tasks": "list of task ids (str)",
+    "startDate": "datetime",
+    "endDate": "datetime",
+    "totalSprintPoints": "int"
+  }
+],
+
+[
+  {"members": "Table"},
+  {
+    "_id": "ObjectId (Do 'pip install bson' in your command line, imported with 'from bson.objectid import ObjectId')",
+    "memberName": "str",
+    "password": "str",
+    "access": "str [User | Admin]",
+    "email": "str",
+    "joinDate": "datetime",
+    "securityQuestions": "dict of question-answer pairs {str: str}"
+  }
+]
+]
