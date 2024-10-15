@@ -13,6 +13,10 @@ members = db["members"]
 tasks = db["tasks"]
 sprints = db["sprints"]
 
-members.delete_many({})
-tasks.delete_many({})
-sprints.delete_many({})
+def purge():
+    members.delete_many({})
+    tasks.delete_many({})
+    sprints.delete_many({})
+
+if __name__ == "__main__":
+    purge()
