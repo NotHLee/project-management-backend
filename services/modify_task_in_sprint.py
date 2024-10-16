@@ -19,6 +19,9 @@ def modify_task_in_sprint(task_id: str, new_task: dict):
     # remove creationDate field from the new_task dictionary
     new_task.pop("creationDate", None)
 
+    # remove the logs field from the new_task dictionary
+    new_task.pop("logs", None)
+
     # if new task is modified to complete, set the completionDate as current date
     if new_task["status"] == "Completed":
         new_task["completionDate"] = datetime.now()
