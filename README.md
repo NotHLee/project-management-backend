@@ -1,6 +1,8 @@
 # Project Management App - Flask Server
 This repository contains the backend server for the Project Management App, developed for **FIT2101: Software Engineering Process and Management** at Monash University Malaysia. The server is built using Flask and serves as the core backend, handling data storage, API endpoints, and logic for task and user management.
 
+**Note**: This backend server connects to the [Project Management App Frontend](https://github.com/NotHLee/project-management-frontend.git) to deliver a complete project management experience.
+
 ## Tech Stack
 - **Python**
 - **MongoDB**: For storing and managing data
